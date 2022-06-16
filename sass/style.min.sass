@@ -1,0 +1,380 @@
+$lc: #EFEAE2
+$dc: #424242
+$mf: leto
+=center
+	display: flex
+	justify-content: center
+	align-items: center
+*
+	font-family: Roboto
+@font-face 
+	font-family: brand
+	src: url(../fonts/brand.otf)
+@font-face 
+	font-family: leto
+	src: url(../fonts/leto.otf)
+@font-face 
+	font-family: billi
+	src: url(../fonts/billi.otf)
+
+
+
+
+header
+	background: $lc
+	height: 69px
+	padding: 4px 0
+	display: flex
+	align-items: center
+.header
+	&_logo
+		img
+			height: 61px
+	&_inst
+		display: flex
+		flex-direction: column
+		justify-content: center
+		align-items: start
+		&_descr
+			font-family: $mf
+			font-weight: 500
+			font-size: 18px
+			line-height: 18px
+			color: $dc
+		&_value
+			font-family: $mf
+			font-weight: 700
+			font-size: 22px
+			line-height: 22px
+			color: $dc
+			margin-top: 7px
+	&_phone
+		display: flex
+		flex-direction: column
+		justify-content: center
+		align-items: flex-end
+		&_number
+			font-family: $mf
+			font-weight: 700
+			font-size: 18px
+			line-height: 18px
+			color: $dc
+		&_call
+			display: block
+			width: 150px
+			height: 30px
+			background: #424242
+			border-radius: 5px
+			color: red
+			display: flex
+			justify-content: center
+			align-items: center
+			margin-top: 3px
+			transition: 0.5s
+			border: 2px solid $lc
+			&:hover
+				background: $lc
+				border: 2px solid $dc
+			a
+				color: $lc
+				text-transform: uppercase
+				text-decoration: none
+				font-size: 14px
+				font-weight: 300
+				position: relative
+				+center
+				width: 100%
+				height: 100%
+				padding: 5px
+				transition: 0.5s
+				&:hover
+					color: $dc
+.promo
+	height: 581px
+	background: url(../img/bg_promo.jpg)
+	animation: move 75s infinite
+	animation-timing-function: linear
+	&_descr
+		background: rgba(255,255,255,0.85)
+		backdrop-filter: blur(10px)
+		padding: 148px 120px 118px 120px
+		height: 581px
+		&_header
+			font-style: normal
+			font-weight: 700
+			font-size: 40px
+			line-height: 40px
+			font-family: $mf
+			color: $dc
+			text-transform: uppercase
+			text-align: right
+		&_subheader
+			font-style: normal
+			font-weight: 500
+			font-size: 24px
+			line-height: 24px
+			font-family: $mf
+			color: $dc
+			text-transform: uppercase
+			text-align: right
+			margin-top: 15px
+		&_icons
+			margin-top: 53px
+			display: flex
+			justify-content: space-between
+			padding: 15px 40px
+			&_item
+				width: 33%
+				display: flex
+				align-items: center
+				justify-content: center
+				flex-direction: column
+				transition: 0.3s
+				cursor: default
+				&:hover
+					transform: scale(1.1)
+			img
+				height: 46px
+			p
+				text-align: center
+		&_btn
+			display: flex
+			justify-content: flex-end
+			&_press
+				width: 300px
+				height: 50px
+				background: #424242
+				border-top-left-radius: 7px
+				border-top-right-radius: 7px
+				transition: 0.5s
+				overflow: hidden
+				&:hover
+					background: $lc
+					border: 2px solid $dc
+					box-shadow: 0 0 10px $dc
+				a
+					color: $lc
+					text-decoration: none
+					text-transform: uppercase
+					font-weight: 300
+					font-size: 22px
+					height: 100%
+					width: 100%
+					display: flex
+					align-items: center
+					justify-content: center
+					transition: 0.5s
+					&:hover
+						color: $dc
+.advantage
+		height: 470px
+		background: $lc
+		padding: 71px 0px 41px 0px 
+		&_header
+			text-align: center
+			font-family: $mf
+			font-style: normal
+			font-weight: 700
+			font-size: 30px
+			line-height: 30px
+			color: #424242
+			text-transform: uppercase
+		&_wrapper
+			margin-top: 50px
+			&_item
+				display: flex
+				flex-direction: column
+				align-items: center
+				justify-content: center
+				transition: 0.3s
+				cursor: default
+				&:hover
+					transform: scale(1.05)
+				&_img
+					img
+						height: 70px
+				&_header
+					margin-top: 35px
+					font-family: $mf
+					font-weight: 700
+					font-size: 18px
+				&_descr
+					margin-top: 20px
+					text-align: center
+					padding: 0px 10px
+.connect
+	padding-top: 65px
+	background: $lc
+	height: 580px
+	position: relative
+	.say
+		position: absolute
+		height: 200px
+		left: 1250px
+		top: -50px
+		display: none
+	&_form
+		&_header
+			font-family: $mf
+			font-weight: 700
+			font-size: 36px
+			line-height: 40px
+		&_subheader
+			font-family: $mf
+			font-weight: 500
+			font-size: 22px
+			margin-top: 10px
+		form
+			margin-top: 18px
+			input
+				width: 300px
+				height: 50px
+				background: white
+				border: 1px solid $dc
+				border-radius: 5px
+				padding: 5px
+				margin-top: 15px
+				color: $dc
+			input[type="submit"]
+				background: $dc
+				margin-top: 25px
+				color: $lc
+				transition: 0.5s
+				&:hover
+					color: $dc
+					background: $lc
+					box-shadow: 0 0 10px $dc
+	&_img
+		img
+			height: 516px
+.occasion
+	padding: 50px
+	background: white
+	&_descr
+		background: rgba(255,255,255,0.85)
+		color: $dc
+	&_arrow
+	&_header
+		text-align: center
+		color: $dc
+		text-transform: uppercase
+		font-weight: 700
+		font-size: 30px
+		font-family: $mf
+	&_cara
+		margin-top: 40px
+
+.creative
+	height: 581px
+	background: url(../img/bg_creative.jpg)
+	animation: rev_move 60s infinite
+	animation-timing-function: linear
+	&_box
+		height: 581px
+		background: rgba(255,255,255,0.85)
+		backdrop-filter: blur(10px)
+		padding: 140px 120px 118px 120px
+		&_header
+			font-style: normal
+			font-weight: 700
+			font-size: 40px
+			line-height: 40px
+			font-family: $mf
+			color: $dc
+			text-transform: uppercase
+			text-align: left
+		&_subheader
+			font-style: normal
+			font-weight: 500
+			font-size: 24px
+			line-height: 24px
+			font-family: $mf
+			color: $dc
+			text-transform: uppercase
+			text-align: left
+			margin-top: 15px
+		&_icons
+			margin-top: 53px
+			display: flex
+			justify-content: space-between
+			align-items: start
+			padding: 15px 40px
+			&_item
+				width: 33%
+				display: flex
+				align-items: center
+				justify-content: center
+				flex-direction: column
+				transition: 0.3s
+				cursor: default
+				&:hover
+					transform: scale(1.1)
+			img
+				height: 46px
+			p
+				text-align: center
+		&_btn
+			display: flex
+			justify-content: flex-start
+			&_press
+				width: 300px
+				height: 50px
+				background: #424242
+				border-top-left-radius: 7px
+				border-top-right-radius: 7px
+				transition: 0.5s
+				overflow: hidden
+				&:hover
+					background: $lc
+					border: 2px solid $dc
+					box-shadow: 0 0 10px $dc
+				a
+					color: $lc
+					text-decoration: none
+					text-transform: uppercase
+					font-weight: 300
+					font-size: 22px
+					height: 100%
+					width: 100%
+					display: flex
+					align-items: center
+					justify-content: center
+					transition: 0.5s
+					&:hover
+						color: $dc
+footer
+	background: $dc
+	padding: 50px 0px 20px 0px
+	text-align: center
+	a
+		color: $lc
+		text-decoration: none
+		&:hover
+			color: white
+	.footer_descr
+		margin-top: 40px
+		color: $lc
+		
+
+
+
+
+
+
+
+
+@keyframes move
+	0%
+		background-position: 0% 0%
+	50%
+		background-position: 100% 0%
+	100%
+		background-position: 0% 0%
+
+@keyframes rev_move
+	0%
+		background-position: 100% 0%
+	50%
+		background-position: 0% 0%
+	100%
+		background-position: 100% 0%
