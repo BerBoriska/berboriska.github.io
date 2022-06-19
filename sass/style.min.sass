@@ -30,6 +30,24 @@ header
 	top: 0
 	z-index: 10
 	box-shadow: 0px 0px 5px $dc
+.order
+	text-align: center
+	background: $lc
+	color: $dc
+	padding:  7px 20px
+	border-bottom-left-radius: 7px
+	border-bottom-right-radius: 7px
+	position: fixed
+	top: -69px
+	left: 50%
+	transform: translateX(-50%)
+	font-size: 22px
+	font-family: $mf
+	z-index: 9
+	border: 2px solid $dc
+	border-top: none
+	box-shadow: 0px 0px 5px $dc
+	transition: 0.3s
 .header
 	&_logo
 		img
@@ -63,6 +81,7 @@ header
 			font-size: 18px
 			line-height: 18px
 			color: $dc
+			transition: 0.3s
 		&_call
 			display: block
 			width: 150px
@@ -152,24 +171,19 @@ header
 				border-top-right-radius: 7px
 				transition: 0.5s
 				overflow: hidden
+				color: $lc
+				text-transform: uppercase
+				font-weight: 300
+				font-size: 22px
+				display: flex
+				align-items: center
+				justify-content: center
+				cursor: pointer
 				&:hover
 					background: $lc
 					border: 2px solid $dc
 					box-shadow: 0 0 10px $dc
-				a
-					color: $lc
-					text-decoration: none
-					text-transform: uppercase
-					font-weight: 300
-					font-size: 22px
-					height: 100%
-					width: 100%
-					display: flex
-					align-items: center
-					justify-content: center
-					transition: 0.5s
-					&:hover
-						color: $dc
+					color: $dc		
 .advantage
 		height: 470px
 		background: $lc
@@ -189,7 +203,7 @@ header
 				display: flex
 				flex-direction: column
 				align-items: center
-				justify-content: center
+				justify-content: flex-start
 				transition: 0.3s
 				cursor: default
 				&:hover
@@ -214,12 +228,6 @@ header
 	background: $lc
 	height: 580px
 	position: relative
-	.say
-		position: absolute
-		height: 200px
-		left: 1250px
-		top: -10px
-		display: none
 	&_form
 		&_header
 			font-family: $mf
@@ -332,24 +340,20 @@ header
 				border-top-right-radius: 7px
 				transition: 0.5s
 				overflow: hidden
+				color: $lc
+				text-decoration: none
+				text-transform: uppercase
+				font-weight: 300
+				font-size: 22px
+				cursor: pointer
+				display: flex
+				justify-content: center
+				align-items: center
 				&:hover
 					background: $lc
 					border: 2px solid $dc
 					box-shadow: 0 0 10px $dc
-				a
-					color: $lc
-					text-decoration: none
-					text-transform: uppercase
-					font-weight: 300
-					font-size: 22px
-					height: 100%
-					width: 100%
-					display: flex
-					align-items: center
-					justify-content: center
-					transition: 0.5s
-					&:hover
-						color: $dc
+					color: $dc
 footer
 	background: $dc
 	padding: 50px 0px 20px 0px
@@ -386,3 +390,145 @@ footer
 		background-position: 0% 0%
 	100%
 		background-position: 100% 0%
+
+@media (max-width:1200px) 
+	
+	.header_phone_number
+		font-size: 14px
+	.header_phone_call a
+		font-size: 12px
+	.promo
+		animation-duration: 150s
+		&_descr
+			padding: 120px 100px 100px
+			&_header
+				font-size: 32px
+			&_subheader
+				font-size: 20px
+			&_icons_item
+				img
+					width: 40px
+					height: 40px
+				p
+					font-size: 12px
+			&_btn_press
+				margin-top: 60px
+				font-size: 18px
+	.advantage
+		padding: 40px 0px
+		height: 390px
+		&_wrapper
+			margin-top: 20px
+			&_item
+				img
+					width: 60px
+					height: 60px
+				&_descr
+					font-size: 14px
+					margin-top: 10px
+				&_header
+					margin-top: 10px
+	footer
+		font-size: 14px
+		.footer_descr
+			margin-top: 20px
+	.creative_box
+		padding: 120px 100px 100px 
+		&_header
+			font-size: 32px
+		&_subheader
+			font-size: 20px
+		&_icons_item
+			img
+				width: 40px
+				height: 40px
+			p
+				font-size: 12px
+		&_btn_press
+			margin-top: 30px
+			font-size: 18px
+@media (max-width:992px)
+	.header_inst
+		align-items: center
+	.promo
+		height: 480px
+		animation-duration: 180s
+		&_descr
+			padding: 80px 70px
+			height: 480px
+			&_header
+				text-align: center
+			&_subheader
+				text-align: center
+			&_btn
+				justify-content: center
+				&_press
+					margin-top: 20px
+	.advantage
+		height: 450px
+	.connect
+		&_form
+			&_header
+				width: 300px
+				font-size: 28px
+			&_subheader
+				width: 300px
+				font-size: 18px
+	.creative
+		height: 480px
+		animation-duration: 180s
+		&_box
+			padding: 80px 70px
+			height: 480px
+			&_header
+				text-align: center
+			&_subheader
+				text-align: center
+			&_btn
+				justify-content: center
+				&_press
+					margin-top: 20px
+
+@media (max-width: 768px)
+	.header
+		&_logo
+			padding: 0
+		&_phone
+			padding: 0
+	.advantage
+		height: 760px
+		padding: 50px 0px
+		&_wrapper
+			&_item
+				margin-top: 30px
+	.connect
+		&_img
+			display: none
+		&_form
+			&_header
+				width: 100%
+				font-size: 28px
+				text-align: center
+			&_subheader
+				width: 100%
+				font-size: 18px
+				text-align: center
+			form
+				display: flex
+				flex-direction: column
+				align-items: center
+				input
+					width: 100%
+					height: 60px
+					margin-top: 0px
+				input[type="submit"]
+					margin-top: 0
+@media (max-width: 576px)
+	.header
+		&_logo
+			display: none
+		&_inst
+			align-items: start
+	.order
+		font-size: 16px
+		width: 80%

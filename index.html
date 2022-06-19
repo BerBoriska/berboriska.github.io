@@ -17,25 +17,29 @@
     <header>
         <div class="container">
             <div class="row header">
-                <div class="offset-md-1 col-md-2 header_logo">
+                <div class="offset-lg-1 col-lg-2 col-md-2 col-sm-3 col-0  header_logo">
                     <img src="icons/logo.png" alt="">
                 </div>
-                <div class="offset-md-2 col-md-2 header_inst">
+                <div class="offset-lg-2 col-lg-2 offset-md-2 col-md-3 col-sm-4 col-6 header_inst">
                     <div class="header_inst_descr">Инстаграм</div>
                     <div class="header_inst_value">@KuzmaCakes</div>
                 </div>
-                <div class="offset-md-2 col-md-2 header_phone">
+                <div class="offset-lg-2 col-lg-2 offset-md-2 col-md-3 offset-sm-1 col-sm-4 col-6 header_phone">
                     <div class="header_phone_number">+7 (800) 555 35 35</div>
                     <div class="header_phone_call"><a href="#connect_sect">Заказать звонок</a></div>
                 </div>
             </div>
         </div>
     </header>
+    
+    <div class="order">
+        Номер, по которому можно сделать заказ, находится в шапке.
+    </div>
 
     <section class="promo">
         <div class="container">
             <div class="row">
-                <div class="offset-md-5 col-md-7 promo_descr">
+                <div class="offset-lg-5 col-lg-7 promo_descr">
                     <div class="promo_descr_header">
                         Торт на любой вкус
                     </div>
@@ -59,21 +63,22 @@
                     </div>
 
                     <div class="promo_descr_btn">
-                        <div class="promo_descr_btn_press">
-                            <a href="">Заказать</a>
+                        <div class="promo_descr_btn_press" onclick="order()">
+                            Заказать
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    
 
     <section class="advantage">
         <div class="advantage_header">Наши приемущества</div>
         <div class="container">
             <div class="row advantage_wrapper">
 
-                <div class="offset-md-1 col-md-3 advantage_wrapper_item">
+                <div class="offset-lg-1 col-lg-3 col-md-4 advantage_wrapper_item">
                     <div class="advantage_wrapper_item_img">
                         <img src="icons/cup.png" alt="">
                     </div>
@@ -84,7 +89,7 @@
                     </div>
                 </div>
 
-                <div class="col-md-4 advantage_wrapper_item">
+                <div class="col-lg-4 col-md-4 advantage_wrapper_item">
                     <div class="advantage_wrapper_item_img">
                         <img src="icons/smile.png" alt="">
                     </div>
@@ -95,7 +100,7 @@
                 </div>
 
 
-                <div class="col-md-3 advantage_wrapper_item">
+                <div class="col-lg-3 col-md-4 advantage_wrapper_item">
                     <div class="advantage_wrapper_item_img">
                         <img src="icons/list.png" alt="">
                     </div>
@@ -112,7 +117,7 @@
     <section class="occasion">
         <div class="container">
             <div class="occasion_header">по любому поводу</div>
-            <div class="offset-md-1 col-md-10 occasion_cara">
+            <div class="offset-lg-1 col-lg-10 occasion_cara">
                 <div id="carouselExampleCaptions" class="carousel carousel-dark slide" data-bs-ride="carousel">
 
                   <div class="carousel-indicators">
@@ -124,21 +129,21 @@
                   <div class="carousel-inner">
                     <div class="carousel-item active">
                       <img src="img/car1.png" class="d-block w-100" alt="...">
-                      <div class="carousel-caption d-none d-md-block occasion_descr">
+                      <div class="carousel-caption d-none d-lg-block occasion_descr">
                         <h5>Праздник или День Рождения</h5>
                         <p>Выберите индивидуальный дизайн торта для того, чтобы удивить именинника</p>
                       </div>
                     </div>
                     <div class="carousel-item">
                       <img src="img/car2.png" class="d-block w-100" alt="...">
-                      <div class="carousel-caption d-none d-md-block occasion_descr">
+                      <div class="carousel-caption d-none d-lg-block occasion_descr">
                         <h5>Свадьба или корпоратив</h5>
                         <p>Шокируйте гостей огромным тортом!</p>
                       </div>
                     </div>
                     <div class="carousel-item">
                       <img src="img/car3.png" class="d-block w-100" alt="...">
-                      <div class="carousel-caption d-none d-md-block occasion_descr">
+                      <div class="carousel-caption d-none d-lg-block occasion_descr">
                         <h5>Для больших компаний</h5>
                         <p>Закажите торт для тёплых вечеров в компании друзей и родственников</p>
                       </div>
@@ -159,12 +164,11 @@
         </div>
     </section>
 
-    <section class="connect" >
+    <section class="connect">
         <div id="connect_sect"></div>
-        <img src="icons/say.png" class="say" id="kuz" alt="">
         <div class="container">
             <div class="row">
-                <div class="offset-md-1 col-md-6 connect_form">
+                <div class="offset-lg-1 col-lg-6  col-md-6 col-sm-12 connect_form">
                     <div class="connect_form_header">Мы обязательно Вам позвоним</div>
                     <div class="connect_form_subheader">Просто заполните форму заявки и мы перезвоним в удобное для Вас время</div>
                     <form action="">
@@ -177,7 +181,7 @@
                         <input type="submit" value="Заказать звонок">
                     </form>
                 </div>
-                <div class="col-md-5 connect_img">
+                <div class="col-lg-5 col-md-6 connect_img">
                     <img src="img/kuzma.png" alt=""  onclick="show()">
                 </div>
             </div>
@@ -187,7 +191,7 @@
     <section class="creative">
         <div class="container">
             <div class="row">
-                <div class="col-md-7 creative_box">
+                <div class="col-lg-7 creative_box">
                     <div class="creative_box_header">Креатив и творчество</div>
                     <div class="creative_box_subheader">уникальные торты для особых случаев</div>
 
@@ -210,8 +214,8 @@
 
                     </div>
                     <div class="creative_box_btn">
-                        <div class="creative_box_btn_press">
-                            <a href="">Заказать</a>
+                        <div class="creative_box_btn_press" onclick="order()">
+                            Заказать
                         </div>
                     </div>
 
