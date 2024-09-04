@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto Condensed", sans-serif;
+}
+.hat{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 210px;
+}
+.hat_profils{
+    display: flex;
+}
+
+.hat{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.hat_menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+}
+.hat_menu div{
+    display: flex;
+    align-items: center;
+}
+.hat_profils{
+    display: flex;
+}
+.hat_profils_persAcc{
+    background-color: #fff;
+    border: 1px solid #4E4A40;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    margin-right: 15px;
+}
+.hat_profils_contact{
+    background-color: #fff;
+    border: 1px solid #4E4A40;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+}
+.hat_menu a{
+    color:#4E4A40;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: "Roboto Condensed", sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-right: 36px;
+    position: relative;
+
+}
+.hat_menu ::after, .selected::after{
+    content: "";
+    display: block;
+    height: 1px;
+    width: 0%;
+    transition: 0.3s;
+    margin: auto;
+    margin-top: 2px;
+}
+.selected::after{
+    width: 100%;
+    background-color: #4E4A40;
+
+}
+.hat_menu a:hover::after{
+    width: 100%;
+    background-color: #4E4A40;
+}
+.sub{
+    padding: 70px 210px 100px 210px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.sub_item{
+    width: 238px;
+    background-color: #262525;
+    border-radius: 15px;
+    height: 385px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.sub_item:hover{
+    box-shadow: 0 0 7px #262525;
+    transform: scale(1.03);
+}
+.sub_item button{
+    width: 108px;
+    height: 35px;
+    color: white;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    background-color: #262525;
+    border-radius: 3px;
+    border: 1px solid white;
+    margin: auto;
+    display: block;
+    margin-top: 25px;
+    cursor: pointer;
+}
+.sub_item_img{
+    background-image: url(..//img/Yoga_time_0007-7.jpg);
+    background-size: cover;
+    width: 238px;
+    height: 270px;
+    background-position: 50% 50%;
+    border-radius: 15px;
+}
+.sub_item_img2{
+    background-image: url(..//img/Yoga_time_0006-6.jpg);
+    background-size: cover;
+    width: 238px;
+    height: 270px;
+    background-position: 50% 50%;
+    border-radius: 15px;
+
+}
+.sub_item_img3{
+    background-image: url(..//img/Yoga_time_0005-5.jpg);
+    background-size: cover;
+    width: 238px;
+    height: 270px;
+    background-position: 50% 50%;
+    border-radius: 15px;
+
+}
+.sub_item_img4{
+    background-image: url(..//img/Yoga_time_0013-13.jpg);
+    background-size: cover;
+    width: 238px;
+    height: 270px;
+    background-position: 50% 50%;
+    border-radius: 15px;
+
+}
+.sub_item_img_gradient{
+    width: 238px;
+    border-radius: 15px;
+    display: flex;
+    color: #FFF2F2;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 270px;
+    background: linear-gradient(180deg, rgba(38, 37, 37, 0.1) 76.74%, rgba(38, 37, 37, 0.5) 86.66%, #262525 100%);
+}
+.time{
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding-bottom: 16px;
+}
