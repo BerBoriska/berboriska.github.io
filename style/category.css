@@ -10,7 +10,7 @@ html{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 40px 210px;
+    padding: 40px 15%;
 }
 .hat_profils{
     display: flex;
@@ -56,7 +56,7 @@ html{
     font-family: "Roboto Condensed", sans-serif;
     font-weight: 400;
     text-transform: uppercase;
-    margin-right: 36px;
+
     position: relative;
 
 }
@@ -81,7 +81,7 @@ html{
 .category{
     display: flex;
     justify-content: flex-end;
-    padding: 0 210px;
+    padding: 0 15%;
 }
 .category_left{
     position: fixed;
@@ -149,17 +149,19 @@ html{
 .category_right_img{
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    width: 660px;
     margin-bottom: 30px;
 }
 .category_right_img div{
     width: 200px;
-    margin-right: 30px;
+
     height: 300px;
     background-color: #ffd779;
     border-radius: 15px;
 }
 .faq{
-    padding: 30px 210px ;
+    padding: 30px 15%;
     color:#4E4A40;
 }
 .faq h1{
@@ -207,4 +209,60 @@ html{
 }
 .faq_item_list p{
     color:#4E4A40;
+}
+.back{
+    background-color: rgb(247, 247, 247);
+    border: 1px solid #4E4A40;
+    border-radius: 100%;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+}
+.back img{
+    width: 50px;
+    height: 30px;
+}
+@media(max-width: 1350px){
+    .hat{
+        padding: 40px 14%;
+    }
+    .faq{
+        padding: 30px 14%;
+    }
+}
+@media(max-width: 1250px){
+    .hat{
+        padding: 30px 12%;
+    }
+    .hat_menu a{
+        font-size: 12px;
+    }
+    .hat_menu{
+        width: 70%;
+    }
+    .faq{
+        padding: 30px 14%;
+    }
+}
+@media(max-width: 1024px){
+    .hat{
+        padding: 30px 10%;
+    }
+    .hat_menu a{
+        font-size: 12px;
+    }
+    .hat_menu{
+        width: 70%;
+    }
+    .faq{
+        padding: 30px 10%;
+    }
+    .faq h1{
+        
+    }
 }

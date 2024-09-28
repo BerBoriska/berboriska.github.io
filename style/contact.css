@@ -7,7 +7,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 40px 210px;
+    padding: 40px 15%;
 }
 .hat_profils{
     display: flex;
@@ -22,7 +22,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 60%;
+    width: 60%; 
+
 }
 .hat_menu div{
     display: flex;
@@ -53,7 +54,6 @@
     font-family: "Roboto Condensed", sans-serif;
     font-weight: 400;
     text-transform: uppercase;
-    margin-right: 36px;
     position: relative;
 
 }
@@ -125,4 +125,151 @@
     width: 140px;
     margin-top: 20px;
 
+}
+@media(max-width: 1370px){
+    .hat{
+        padding: 30px 13%;
+    }
+    .hat_menu a{
+        font-size: 12px;
+    }
+    .contact_text h2{
+        font-size: 43px;
+        
+    }
+    .hat_menu{
+        width: 70%;
+    }
+
+}
+@media(max-width: 1200px){
+    .hat{
+        padding: 30px 10%;
+    }
+    .hat_menu a{
+        font-size: 12px;
+    }
+    .contact_text h2{
+        font-size: 39px;
+        
+    }
+    .hat_menu{
+        width: 70%;
+    }
+
+}
+@media(max-width: 1150px){
+    .hat{
+        padding: 40px 13%;
+    }
+    .hat_menu a{
+        font-size: 12px;
+    }
+    .contact_text h2{
+        font-size: 39px;
+        
+    }
+    .hat_menu{
+        width: 70%;
+    }
+
+}
+@media(max-width: 1070px){
+    .hat{
+        padding: 30px 10%;
+    }
+    .hat_menu a{
+        font-size: 12px;
+    }
+    .hat_menu{
+        width: 70%;
+    }
+    .contact_text h2{
+        font-size: 35px;
+    }
+}
+@media(max-width: 1024px){
+    .hat{
+        padding: 30px 10%;
+    }
+    .hat_menu a{
+        font-size: 12px;
+    }
+    .hat_menu{
+        width: 70%;
+    }
+    .contact_text h2{
+        font-size: 35px;
+        margin-bottom: 20px;
+    }
+    .contact_text{
+        margin-left: 120px;
+    }
+    .contact_text_phone p{
+        font-size: 14px;
+    }
+    .contact_text_img{
+        margin-top: 10px;
+    }
+}
+@media(max-width: 768px){
+    .hat{
+        padding: 30px 10%;
+    }
+    .hat_logo{
+        font-size: 14px;
+    }
+    .hat_menu a{
+        font-size: 11px;
+    }
+    .hat_menu{
+        width: 70%;
+    }
+    .hat_profils_persAcc{
+        width: 20px;
+        height: 20px;
+    }
+    .hat_profils_contact{
+        width: 20px;
+        height: 20px;
+    }
+    .contact_text h2{
+        font-size: 30px;
+        margin-bottom: 15px;
+    }
+    .contact_text{
+        margin-left: 100px;
+    }
+    .contact_text_phone p{
+        font-size: 12px;
+    }
+    .contact_text_img{
+        margin-top: 10px;
+    }
+}
+@media(max-width: 620px){
+    .contact_text h2{
+        font-size: 30px;
+        margin-bottom: 15px;
+    }
+
+    .contact_text_phone p{
+        font-size: 12px;
+    }
+    .contact_text h2{
+        font-size: 30px;
+        margin-bottom: 15px;
+    }
+    .contact_text{
+        margin: auto;
+    }
+    .contact_text_phone p{
+        font-size: 12px;
+    }
+    .contact_img{
+        display: none;
+    }
+    .contact_text_img{
+        margin-top: 10px;
+    } 
 }
