@@ -1,0 +1,50 @@
+*{
+	text-align: center;
+	margin: 0;
+	margin-bottom: 10px;
+	font-family: sans-serif;
+}
+body{
+	padding: 50px;
+}
+.box{
+	display: flex;
+	justify-content: space-between;
+	padding: 50px 300px;
+}
+.box_item{
+
+}
+.box_item_inner{
+	display: block;
+	color: black;
+	text-decoration: none;
+	width: 500px;
+	height: 250px;
+	box-shadow: 0px 0px 2px gray;
+	margin-bottom: 50px;
+	background-position: 50% 50%;
+	background-size: cover;
+	transition: 0.4s;
+}
+.box_item_inner:hover{
+	transform: scale(1.03);
+	box-shadow: 0px 0px 4px gray;
+	border-radius: 15px;
+}
+.s_vera{
+	background-image: url(s_vera.svg);
+	background-size: 40%;
+	background-repeat: no-repeat;
+
+}
+.m_vera{
+	background-image: url(m_vera.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+
+}
+.yoga{
+	background-image: url(yoga.jpg);
+	background-position: 50% 60%;
+}
